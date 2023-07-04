@@ -1,7 +1,11 @@
 const puppeteer = require('puppeteer'); // v13.0.0 or later
 
 (async () => {
-    const browser = await puppeteer.launch({headless:'new'});
+    const browser = await puppeteer.launch({
+      // production settings
+      executablePath: '/usr/bin/google-chrome',
+      headless: 'new'
+    });
     const page = await browser.newPage();
     const timeout = 30000;
     var screenshotCount = 0;
@@ -170,11 +174,15 @@ const puppeteer = require('puppeteer'); // v13.0.0 or later
     }
 
     await browser.close();
+    
+    console.log('Bot finished!');
 
-    async function captureScreenShot(screenshotDelay=100) {
+    async function captureScreenShot(screenshotDelay=1000) {
         screenshotCount += 1;
         const targetPage = page;
+        // const promises = [];
         await targetPage.waitForTimeout(screenshotDelay);
+        // await Promise.all(promises);
         await targetPage.screenshot({path: './downloads/screen' + screenshotCount + '.png', fullPage: true});
     }
 

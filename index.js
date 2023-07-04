@@ -2,7 +2,12 @@ const puppeteer = require('puppeteer');
 
 (async () => {
   // Launch a new browser instance
-  const browser = await puppeteer.launch({headless: 'new'});
+  const browser = await puppeteer.launch({
+    // production settings
+    executablePath: '/usr/bin/google-chrome',
+    headless: 'new'
+  });
+   
 
   // Create a new page
   const page = await browser.newPage();
