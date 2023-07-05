@@ -3,7 +3,8 @@ const puppeteer = require('puppeteer'); // v13.0.0 or later
 (async () => {
     const browser = await puppeteer.launch({
       // production settings
-      executablePath: '/usr/bin/google-chrome',
+      // executablePath: '/usr/bin/google-chrome',
+      executablePath: 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
       headless: 'new'
     });
     const page = await browser.newPage();
