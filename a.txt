@@ -1,0 +1,23 @@
+ Volume in drive C is ??
+ Volume Serial Number is 7B57-3A69
+
+ Directory of C:\Projects\github-profile-dot-matrix\PuppeteerBot
+
+09/29/2025  10:22 AM    <DIR>          .
+09/29/2025  10:21 AM    <DIR>          ..
+09/29/2025  10:21 AM                14 .dockerignore
+09/29/2025  10:21 AM                21 .gitignore
+09/29/2025  10:22 AM                 0 a.txt
+09/29/2025  10:21 AM             1,095 Dockerfile
+09/29/2025  10:21 AM    <DIR>          downloads
+09/29/2025  10:21 AM            13,410 google-recorder.js
+09/29/2025  10:21 AM             1,221 index.js
+09/29/2025  10:21 AM                80 last-modified.txt
+09/29/2025  10:21 AM    <DIR>          module
+09/29/2025  10:21 AM            48,179 package-lock.json
+09/29/2025  10:21 AM               156 package.json
+09/29/2025  10:21 AM               196 puppeteer.config.cjs
+09/29/2025  10:21 AM               346 README.md
+09/29/2025  10:21 AM                 0 requirements.txt
+              12 File(s)         64,718 bytes
+               4 Dir(s)  371,504,046,080 bytes free
